@@ -1,0 +1,18 @@
+<div id="userLogin">
+  <hgroup>
+    <h1>User Login</h1>
+  </hgroup>
+  <form class="loginForm">
+    <div class="group">
+      <input type="text" ng-model="username"><span class="highlight"></span><span class="bar"></span>
+      <label  class="loginFrm">Username</label>
+    </div>
+    <div class="group">
+      <input type="password" ng-model="password"><span class="highlight"></span><span class="bar"></span>
+      <label class="loginFrm">Password</label>
+    </div>
+    <button type="button" class="button buttonBlue" ng-click="doLogin()">Login
+      <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+    </button>
+  </form>
+</div>

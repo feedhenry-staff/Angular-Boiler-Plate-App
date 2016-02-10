@@ -1,0 +1,15 @@
+{
+<<<<<<< HEAD
+  "host": "http://localhost:8100",
+  "appid" : "testappid",
+  "appkey" : "testappkey",
+  "projectid" : "testprojectid",
+  "connectiontag" : "testconnectiontag"
+=======
+  "appid": "sohvpchogzxs3k5x7mubjk3c",
+  "appkey": "95ed50c9e471144cb565acf06774e10d5a53c0f1",
+  "connectiontag": "0.0.3",
+  "host": "https://ps-consult-na.redhat.feedhenry.com",
+  "projectid": "sohvpccfq7tx6yl44husssuw"
+>>>>>>> 2f1b74501c0be1b27695e6f7af2ce37a99ad6eb6
+}

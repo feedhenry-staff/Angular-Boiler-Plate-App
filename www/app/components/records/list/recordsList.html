@@ -1,0 +1,14 @@
+<md-input-container class="md-block">
+    <label>Filter</label>
+    <input ng-model="filter" type="text">
+</md-input-container>
+
+<md-list  >
+  <md-list-item ng-repeat="record in records | filter: {title: filter}" >
+    <div class="md-list-item" ng-click="showRecord(record.id)">
+      <h3>{{record.title}}</h3>
+      <p>{{record.description}}</p>
+    </div>
+    <md-divider></md-divider>
+  </md-list-item>
+</md-list>
