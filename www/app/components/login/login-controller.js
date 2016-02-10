@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('rhmobile')
-.controller('LoginController',function($scope, $log, auth, $state){
+.controller('LoginController',function($scope, $log, auth, $state, $rootScope){
+	$rootScope.showToolbar = false;
 	$scope.doLogin = function(){
 		$log.info($scope.username);
 		var promise = auth.doLogin($scope.username, $scope.password);

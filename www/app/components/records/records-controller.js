@@ -1,20 +1,21 @@
 'use strict';
 
 angular.module('rhmobile')
-.controller('RecordsController',function($scope, $log,  $mdDialog,$mdMedia, $state, $location){
+.controller('RecordsController',function($scope, $log, $mdDialog,$mdMedia, $state, $location){
+
   $log.info('RecordsController loaded');
   $scope.$on('showBackButton', function(event, value) { 
   	console.log('showBackButton'+ value); 
   	$scope.showBackButton = value;
   });
   $scope.goBack = function(){
-  	window.history.back();
+    window.history.back();
   }
   $scope.logout = function(){
-  	$state.go('login');
+    $state.go('login');
   }
   $scope.createNewRecord = function(ev) {
-  	$log.info('createRecord');
+    $log.info('createRecord');
     var useFullScreen = true;
     $mdDialog.show({
       controller: DialogController,
@@ -25,7 +26,7 @@ angular.module('rhmobile')
       fullscreen: useFullScreen
     })
     .then(function(answer) {
-      $log.info('submit');	
+      $log.info('submit');  
       $scope.status = 'You said the information was "' + answer + '".';
     }, function() {
       $log.info('cancel');

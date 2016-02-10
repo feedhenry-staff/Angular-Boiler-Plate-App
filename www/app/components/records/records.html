@@ -1,20 +1,18 @@
-    <md-toolbar>
-      <div class="md-toolbar-tools">
-        <md-button  ng-show="showBackButton" aria-label="Go Back" ng-click="goBack();" >
-          Go Back
-        </md-button>
-        <md-button  ng-show="!showBackButton" aria-label="Logout" ng-click="logout();" >
-          Logout
-        </md-button>
-        <h2 class="title">
-          <span>Record List</span>
-        </h2>
-        <span flex></span>
-   
-        <md-button ng-click="createNewRecord($event)" class="md-icon-button" aria-label="More">
-          <md-icon  md-svg-icon="./app/images/addRecord.svg"></md-icon>
-
-        </md-button>
-      </div>
-    </md-toolbar>
-<div ui-view></div>
+<md-toolbar>
+  <div class="md-toolbar-tools">
+    <md-button  ng-show="showBackButton" aria-label="Go Back" ng-click="goBack();" >
+      Go Back
+    </md-button>
+    <md-button  ng-show="!showBackButton" aria-label="Logout" ng-click="logout();" >
+      Logout
+    </md-button>
+    <h2 class="title">
+      <span>Record List</span>
+    </h2>
+    <span flex></span>
+    <md-button ng-click="createNewRecord($event)" class="md-icon-button" aria-label="More">
+      <md-icon  md-svg-icon="./app/images/addRecord.svg"></md-icon>
+    </md-button>
+  </div>
+</md-toolbar>
+<ui-view layout="column" layout-fill></ui-view>
