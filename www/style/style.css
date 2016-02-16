@@ -19,7 +19,7 @@ hgroup h1 {
 
 h1, h3 { font-weight: 300; }
 
-h1 { color: #636363; }
+
 
 h3 { color: #4a89dc; }
 
@@ -245,7 +245,7 @@ footer img:focus , footer a:focus { outline: none; }
 .title {
 	position: absolute;
 	left:130px;
-	top:30%;
+	top:20%;
 	
 }
 
@@ -253,3 +253,60 @@ md-input-container.md-block {
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
+.md-toolbar-tools{
+	min-height: 10%;
+	height: 10%;
+	max-height: 10%;
+}
+
+.md-toolbar-tools h2{
+
+}
+.footer {
+	background-image: url('/app/images/logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+div.overlay {
+	position: absolute;
+	left:0px;
+	top:0px;
+	opacity: .5;
+	background-color: black;
+	height:100%;
+	width: 100%;
+	z-index: 999999;
+	text-align: center;
+	padding-top: 20%;
+}
+
+div.overlay h2{
+	color:white;
+}
+
+div.errorWrap {
+	width:100%;
+	text-align:left;
+	padding-left: 10px;
+}
+div.error, .requiredMsg{
+	color:red;
+	font-size: 12px;
+}
+div.version {
+	position: absolute;
+	font-size: 10px;
+	bottom:30px;
+	right:10px;
+}
+div.logo {
+	background-image: url('/app/images/redhat.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: 50px;	
+	background-position-x:10px;
+
+}
+
+

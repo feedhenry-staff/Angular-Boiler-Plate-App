@@ -1,5 +1,5 @@
 <md-toolbar>
-  <div class="md-toolbar-tools">
+  <div id="mainToolbar" class="md-toolbar-tools" >
     <md-button  ng-show="showBackButton" aria-label="Go Back" ng-click="goBack();" >
       Go Back
     </md-button>
@@ -11,8 +11,17 @@
     </h2>
     <span flex></span>
     <md-button ng-click="createNewRecord($event)" class="md-icon-button" aria-label="More">
-      <md-icon  md-svg-icon="./app/images/addRecord.svg"></md-icon>
+      <md-icon  md-svg-icon="./app/images/ic_add_white_24px.svg"></md-icon>
     </md-button>
   </div>
 </md-toolbar>
-<ui-view layout="column" layout-fill></ui-view>
+<div style="height:80%">
+  <ui-view layout="column" layout-fill ></ui-view>
+</div>
+<div class="md-toolbar-tools">
+  <md-toolbar class="footer " >
+    <div layout="row" layout-align="center center" flex>
+   
+    </div>
+  </md-toolbar>
+</div>

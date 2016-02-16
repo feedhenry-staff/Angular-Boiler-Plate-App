@@ -12,8 +12,9 @@ angular.module('rhmobile')
 	
 	$scope.getRecords = function(){
 		var promise = records.getRecords();
-		promise.then(function(records){
-			$scope.records = records;
+		promise.then(function(res){
+			console.log(res)
+			$scope.records = res.payload;
 		}, function(err){
 			$log.error(err);
 			

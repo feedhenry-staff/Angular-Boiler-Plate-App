@@ -1,4 +1,4 @@
-angular.module('rhmobile',['ngMaterial','rhmobile.router','rhmobile.auth','rhmobile.fhservices','rhmobile.records'])
+angular.module('rhmobile',['ngMessages','ngMaterial','rhmobile.router','rhmobile.auth','rhmobile.fhservices','rhmobile.records','rhmobile.constants'])
 .run(function($log) {
    
 });

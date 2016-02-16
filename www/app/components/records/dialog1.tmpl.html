@@ -12,9 +12,14 @@
     </md-toolbar>
     <md-dialog-content>
       <div class="md-dialog-content"> 
-        <p>
-          Create new record
-        </p>
+        <md-input-container>
+          <label>Title</label>
+          <input ng-model="record.title">
+        </md-input-container>
+        <md-input-container>
+          <label>Description</label>
+          <input ng-model="record.description">
+        </md-input-container>
 
       </div>
     </md-dialog-content>
@@ -25,8 +30,20 @@
        Cancel
       </md-button>
       <md-button ng-click="submit()" style="margin-right:20px;">
-        Submit
+        Save
       </md-button>
     </md-dialog-actions>
   </form>
+  <div class="errorWrap">
+    <div class="error">
+
+      {{error}}
+    </div>
+  </div>
+
 </md-dialog>
+<div class="overlay" ng-show="showOverlay">
+<h2>Saving record<br>please wait..</h2>
+<img src="/app/images/spinner.svg"
+
+</div>

@@ -43,8 +43,10 @@ angular.module('rhmobile.fhservices',[])
 				  "timeout": 25000 // timeout value specified in milliseconds. Default: 60000 (60s)
 				}, function(res) {
 				  // Cloud call was successful. Resolve the response
-				  if (res.success && res.payload){
-				  	resolve(res.payload);
+				  if (res.success ){
+				  	
+				  	resolve(res);
+				  	
 				  } else {
 				  	reject('Invalid response from cloud call');
 				  }
