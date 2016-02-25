@@ -8471,9 +8471,11 @@ var checkAuth = function(url) {
 };
 
 var handleAuthResponse = function(endurl, res, success, fail){
+
   if(res.status && res.status === "ok"){
 
     var onComplete = function(res){
+      
       if(res.sessionToken){
         fhparams.setAuthSessionToken(res.sessionToken);
       }
@@ -8529,6 +8531,7 @@ var handleAuthResponse = function(endurl, res, success, fail){
        document.location.href = res.url;
       }
     } else {
+      
       onComplete(res);
     }
   } else {
